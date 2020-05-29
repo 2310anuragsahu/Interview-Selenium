@@ -13,7 +13,7 @@ import org.testng.annotations.AfterSuite;
 public class HierarchyTest {
 	
 
-	@Test
+	@Test(groups = {"account"})
 	public void f() {
 		System.out.println("**********  Test Case 1  ********");
 	}

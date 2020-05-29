@@ -3,9 +3,15 @@
 
 <suite name="Suite1">
 	<test name="test1">
+		<!-- <groups> <run> <include name="account" /> </run> </groups> -->
 		<classes>
-			<class name="demo.Interview.HierarchyTest" />
-			<class name="demo.Interview.Hierarchy2" />
+			<class name="demo.Interview.HierarchyTest">
+				<methods>
+					<include name="f" />
+					<exclude name="b" />
+				</methods
+			</class>
+			<!-- <class name="demo.Interview.Hierarchy2" /> -->
 		</classes>
 	</test>
 </suite>
