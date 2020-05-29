@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="65" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="65" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+      <class name="demo.Interview.Hierarchy2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="b" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="f" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:demo.Interview.Hierarchy2@31ef45e3]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- demo.Interview.Hierarchy2 -->
+      <class name="demo.Interview.HierarchyTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="beforeSuite" is-config="true" duration-ms="17" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="b" duration-ms="3" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="f" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:demo.Interview.HierarchyTest@57fffcd7]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-05-29T17:08:09 IST" finished-at="2020-05-29T17:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- demo.Interview.HierarchyTest -->
+    </test> <!-- test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
