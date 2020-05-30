@@ -1,95 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="79" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
+  <suite name="Suite1" duration-ms="83" started-at="2020-05-30T18:19:28 IST" finished-at="2020-05-30T18:19:28 IST">
     <groups>
     </groups>
-    <test name="test1" duration-ms="79" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-      <class name="demo.Interview.Hierarchy">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="beforeSuite" is-config="true" duration-ms="22" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
+    <test name="test1" duration-ms="83" started-at="2020-05-30T18:19:28 IST" finished-at="2020-05-30T18:19:28 IST">
+      <class name="listeners.TestCases">
+        <test-method status="PASS" signature="Login()[pri:0, instance:listeners.TestCases@7b49cea0]" name="Login" duration-ms="20" started-at="2020-05-30T18:19:28 IST" finished-at="2020-05-30T18:19:28 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
+        </test-method> <!-- Login -->
+        <test-method status="FAIL" signature="TestToFail()[pri:0, instance:listeners.TestCases@7b49cea0]" name="TestToFail" duration-ms="20" started-at="2020-05-30T18:19:28 IST" finished-at="2020-05-30T18:19:28 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at listeners.TestCases.TestToFail(TestCases.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="b()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="b" duration-ms="11" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- b -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="f" duration-ms="2" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:demo.Interview.Hierarchy@5bc79255]" name="afterSuite" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- demo.Interview.Hierarchy -->
-      <class name="demo.Interview.Hierarchy2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="b()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="b" duration-ms="2" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- b -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="f" duration-ms="2" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:demo.Interview.Hierarchy2@47ef968d]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-05-29T15:16:09 IST" finished-at="2020-05-29T15:16:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- demo.Interview.Hierarchy2 -->
+        </test-method> <!-- TestToFail -->
+      </class> <!-- listeners.TestCases -->
     </test> <!-- test1 -->
   </suite> <!-- Suite1 -->
 </testng-results>

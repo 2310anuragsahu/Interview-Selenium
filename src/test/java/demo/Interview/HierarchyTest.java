@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -12,15 +14,24 @@ import org.testng.annotations.AfterSuite;
 
 public class HierarchyTest {
 	
-
-	@Test(groups = {"account"})
-	public void f() {
+	WebDriver driver = null;
+	
+	@Test(groups = {"account"}, invocationCount = 1)
+	public void f() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("www.google.com");
+		Thread.sleep(5000);
 		System.out.println("**********  Test Case 1  ********");
+		driver.quit();
 	}
 
-	@Test
-	public void b() {
-
+	@Test(enabled = false)
+	public void b() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
+		WebDriver driver1 = new ChromeDriver();
+		driver1.get("www.google.com");
+		Thread.sleep(5000);
 		System.out.println("**********  Test Case 2  ********");
 	}
 
@@ -62,6 +73,7 @@ public class HierarchyTest {
 	@AfterSuite
 	public void afterSuite() {
 		System.out.println("After Suite");
+		driver.quit();
 	}
 
 }

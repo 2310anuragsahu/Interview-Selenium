@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1">
+<suite name="Suite1" thread-count="3" parallel="methods">
+	<listeners>
+		<listener class-name="listeners.ListenerTest" />
+	</listeners>
 	<test name="test1">
-		<!-- <groups> <run> <include name="account" /> </run> </groups> -->
+		<!-- <groups>
+			<run>
+				<include name="account" />
+			</run>
+		</groups> -->
 		<classes>
-			<class name="demo.Interview.HierarchyTest">
+			<!-- <class name="demo.Interview.HierarchyTest">
 				<methods>
 					<include name="f" />
 					<exclude name="b" />
-				</methods
-			</class>
-			<!-- <class name="demo.Interview.Hierarchy2" /> -->
+				</methods>
+			</class> -->
+			<class name="listeners.TestCases" />
 		</classes>
 	</test>
 </suite>
