@@ -1,4 +1,4 @@
-package demo.Interview;
+package demo;
 
 public class SwapNumbers {
 
