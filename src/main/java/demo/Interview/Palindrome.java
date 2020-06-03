@@ -1,6 +1,6 @@
 package demo.Interview;
 
-public class App {
+public class Palindrome {
 
 	public static void main(String[] args) {
 

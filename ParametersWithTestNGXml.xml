@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="3">
+	<!-- If author is not given, then Optional annotation will provide the value -->
+	<parameter name="author" value="Guru99" />
+	<parameter name="searchKey" value="India" />
+	<test name="testGuru">
+		<!-- test level parameter will get preference over suite level. All the 
+			classes inside that test level will share the overridden parameter, and other 
+			classes which are outside the test level will share suite level parameter. -->
+		<parameter name="searchKey" value="UK" />
+		<classes>
+			<class name="parameterization.ParametersWithTestNGXml">
+			</class>
+		</classes>
+	</test>
+</suite>
