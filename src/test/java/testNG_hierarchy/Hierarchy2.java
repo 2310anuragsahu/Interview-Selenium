@@ -1,4 +1,4 @@
-package demo;
+package testNG_hierarchy;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;

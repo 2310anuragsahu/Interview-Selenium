@@ -1,4 +1,4 @@
-package seleniumGrid;
+package important_concepts;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
