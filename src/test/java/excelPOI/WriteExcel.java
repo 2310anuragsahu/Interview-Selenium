@@ -66,7 +66,7 @@ public class WriteExcel {
 	public static void main(String[] args) throws IOException {
 		String[] valueToWrite = { "Mr. E", "Noida" };
 		WriteExcel objExcelFile = new WriteExcel();
-		objExcelFile.writeExcel(System.getProperty("user.dir") + "\\src\\test\\java\\excelPOI", "Data.xlsx",
+		objExcelFile.writeExcel(System.getProperty("user.dir") + "\\src\\test\\recources\\documents", "Data.xlsx",
 				"Sheet1", valueToWrite);
 	}
 }

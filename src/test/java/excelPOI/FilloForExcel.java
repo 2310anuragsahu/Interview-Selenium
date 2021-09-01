@@ -42,7 +42,7 @@ public class FilloForExcel {
 	public static void main(String[] args) throws FilloException {
 		FilloForExcel filloQuery = new FilloForExcel();
 
-		String excelPath = ".\\src\\test\\java\\excelPOI\\Data.xlsx";
+		String excelPath = ".\\src\\test\\recources\\documents\\Data.xlsx";
 		String strQuery = "Select * from Sheet2";
 
 		filloQuery.selectQuery(excelPath, strQuery);

@@ -19,7 +19,7 @@ public class ReporterClass_TestNG {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		Thread.sleep(5000);
-		driver.get("http://newtours.demoaut.com/");
+		driver.get("http://demo.guru99.com/test/newtours/");
 		Reporter.log("Mecury Website is successfully opened.");
 		WebElement ele = driver.findElement(By.name("userName"));
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -28,7 +28,7 @@ public class ReporterClass_TestNG {
 		Reporter.log("Username entered.");
 		driver.findElement(By.name("password")).sendKeys("mercury");
 		Reporter.log("Password entered.");
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.name("submit")).click();
 		Reporter.log("Login Successful.");
 		Thread.sleep(5000);
 		driver.close();

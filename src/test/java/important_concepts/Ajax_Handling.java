@@ -26,7 +26,7 @@ public class Ajax_Handling {
 	}
 
 	@Test
-	public void test_AjaxExample() {
+	public void test_AjaxExample() throws Exception {
 
 		By container = By.cssSelector(".container");
 		wait = new WebDriverWait(driver, 5);
@@ -38,6 +38,7 @@ public class Ajax_Handling {
 
 		// Click on the radio button
 		driver.findElement(By.id("yes")).click();
+		Thread.sleep(3000);
 
 		// Click on Check Button
 		driver.findElement(By.id("buttoncheck")).click();
