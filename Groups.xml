@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Group Test">
+		<groups>
+			<run>
+				<include name="strong_ties" />
+			</run>
+		</groups>
+		<classes>
+			<class name="groups.GroupTagTesting">
+				<methods>
+ 					<!--<include name="TC_001" /> -->
+					<exclude name="TC_004" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

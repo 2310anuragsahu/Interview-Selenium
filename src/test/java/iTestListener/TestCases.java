@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-//@Listeners(listeners.ListenerTest.class)
+@Listeners(iTestListener.ListenerTest.class)
 public class TestCases {
 
 	// Test to pass as to verify listeners .

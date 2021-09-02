@@ -20,10 +20,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.2</version>
+				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>Hierarchy_testng.xml</suiteXmlFile>
+						<suiteXmlFile>ParallelExecution.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>ParametersWithTestNGXml.xml</suiteXmlFile> -->
 					</suiteXmlFiles>
 				</configuration>

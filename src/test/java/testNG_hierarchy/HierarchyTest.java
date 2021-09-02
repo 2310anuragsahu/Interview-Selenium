@@ -20,7 +20,7 @@ public class HierarchyTest{
 	public void f() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("www.google.com");
+		driver.get("http://www.google.com");
 		Thread.sleep(5000);
 		System.out.println("**********  Test Case 1  ********");
 		driver.quit();
@@ -30,7 +30,7 @@ public class HierarchyTest{
 	public void b() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
 		WebDriver driver1 = new ChromeDriver();
-		driver1.get("www.google.com");
+		driver1.get("http://www.google.coms");
 		Thread.sleep(5000);
 		System.out.println("**********  Test Case 2  ********");
 	}
