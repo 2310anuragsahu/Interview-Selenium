@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iReporter">
+  <test thread-count="5" name="iReporter">
+    <classes>
+      <class name="iReporter.TestCase"/>
+    </classes>
+  </test> <!-- iReporter -->
+</suite> <!-- Suite -->

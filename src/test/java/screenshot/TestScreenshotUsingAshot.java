@@ -26,13 +26,15 @@ public class TestScreenshotUsingAshot {
 		Screenshot screenshot = new AShot().takeScreenshot(driver);
 		ImageIO.write(screenshot.getImage(), "png", new File("./test-output/Screenshots/NormalScreenshot.jpg"));
 		
-		// Bigger Screenshot with the help of scrolling
-		Screenshot biggerScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+		// Full Page Screenshot with the help of scrolling
+		Screenshot biggerScreenshot = new AShot().
+				shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
 		ImageIO.write(biggerScreenshot.getImage(), "jpg", new File("./test-output/Screenshots/BiggerScreenshot.jpg"));
 
 		// Screenshot a Particular Element
 		WebElement element = driver.findElement(By.xpath("//*[@id='htmlcontent_top']/ul/li[1]/a/img"));
-		Screenshot elementScreenshot= new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(driver,element);
+		Screenshot elementScreenshot= new AShot().
+				shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(driver,element);
 		ImageIO.write(elementScreenshot.getImage(), "jpg", new File("./test-output/Screenshots/ElementScreenshot.jpg"));
 		
 		driver.quit();

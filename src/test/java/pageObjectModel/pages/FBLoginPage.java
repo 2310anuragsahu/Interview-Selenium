@@ -13,15 +13,15 @@ public class FBLoginPage {
 	}
 
 	// Using FindBy for locating elements
-	@FindBy(how = How.XPATH, using = "//input[@type='email'][@name='email']")
+	@FindBy(how = How.XPATH, using = "//*[@id='email']")
 	WebElement emailTextBox;
-	@FindBy(how = How.XPATH, using = "//input[@type='password'][@name='pass']")
+	@FindBy(how = How.XPATH, using = "//*[@id='pass']")
 	WebElement passwordTextBox;
-	@FindBy(how = How.XPATH, using = "//input[@type='submit']")
+	@FindBy(how = How.XPATH, using = "//*[@name='login']")
 	WebElement signinButton;
 
-	// Defining all the user actions (Methods) that can be performed in the Facebook
-	// home page
+	// Defining all the user actions (Methods) that can 
+	// be performed in the Facebook Login page
 
 	// This method is to set Email in the email text box
 	public void setEmail(String strEmail) {

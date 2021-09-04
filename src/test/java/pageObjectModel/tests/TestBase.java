@@ -14,14 +14,15 @@ public class TestBase {
 
 	@BeforeSuite
 	public void initialize() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", 
+				"C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		// To maximize browser
 		driver.manage().window().maximize();
 		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		// To open facebook
-		driver.get("https://www.facebook.com");
+		driver.get("https://en-gb.facebook.com/");
 	}
 
 	@AfterSuite

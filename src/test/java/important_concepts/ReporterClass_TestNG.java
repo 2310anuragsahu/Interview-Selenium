@@ -12,14 +12,19 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class ReporterClass_TestNG {
-	WebDriver driver = null;
+
+	static WebDriver driver = null;
+	static String userDir = System.getProperty("user.dir");
 	
 	@Test
 	public void test1 () throws Exception {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\inasahu\\Drivers\\chromedriver.exe");
+		
+		System.setProperty("webdriver.chrome.driver", userDir + "\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
 		Thread.sleep(5000);
 		driver.get("http://demo.guru99.com/test/newtours/");
+		
 		Reporter.log("Mecury Website is successfully opened.");
 		WebElement ele = driver.findElement(By.name("userName"));
 		WebDriverWait wait = new WebDriverWait(driver, 5);

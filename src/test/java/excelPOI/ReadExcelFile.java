@@ -47,7 +47,7 @@ public class ReadExcelFile {
 
 	public static void main(String[] args) throws Exception {
 		ReadExcelFile objExcelFile = new ReadExcelFile();
-		String filePath = System.getProperty("user.dir") + "\\src\\test\\recources\\documents";
+		String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\documents";
 		objExcelFile.readExcel(filePath, "Data.xlsx", "Sheet1");
 	}
 
