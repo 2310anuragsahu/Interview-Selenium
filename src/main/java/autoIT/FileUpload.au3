@@ -1,5 +1,5 @@
 ControlFocus("Open", "", "Edit1")
 Sleep(2000)
-ControlSetText("Open","","Edit1","C:\Users\inasahu\Desktop\system_catalog.xml")
+ControlSetText("Open","","Edit1","C:\Users\inasahu\Pictures\Doggo.jpg")
 Sleep(2000)
 ControlClick("Open","","Button1")

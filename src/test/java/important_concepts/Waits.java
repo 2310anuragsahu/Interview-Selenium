@@ -1,5 +1,6 @@
 package important_concepts;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
@@ -27,26 +28,33 @@ public class Waits {
 		driver.findElement(By.name("password")).sendKeys("mercury");
 		driver.findElement(By.name("login")).click();
 
-		WebElement element = driver.findElement(By.name("tripType"));
+		WebElement element1 = driver.findElement(By.name("tripType"));
 
 		// Explicit Wait
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.visibilityOf(element1));
 
-		// Fluent Wait
+		// Fluent Wait after Selenium 3.11
 		// Waiting 30 seconds for an element to be present on the page, checking
 		// for its presence once every 5 seconds.
 		Wait<WebDriver> wait2 = new FluentWait<WebDriver>(driver)
-		.withTimeout(30, TimeUnit.SECONDS)
-		.pollingEvery(5, TimeUnit.SECONDS)
-		.ignoring(NoSuchElementException.class);
+				.withTimeout(Duration.ofSeconds(30))	//.withTimeout(30, TimeUnit.SECONDS)  Before Selenium 3.11
+				.pollingEvery(Duration.ofSeconds(5))	//.pollingEvery(5, TimeUnit.SECONDS)  Before Selenium 3.11
+				.ignoring(NoSuchElementException.class);
 
-		WebElement foo = wait2.until(new Function<WebDriver, WebElement>() {
+		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
 			public WebElement apply(WebDriver driver) {
-				return driver.findElement(By.id("foo"));
+				WebElement element = driver.findElement(By.xpath("//*[@id='softwareTestingMaterial']"));
+				String getTextOnPage = element.getText();
+				if(getTextOnPage.equals("Software Testing Material - DEMO PAGE")){
+					System.out.println(getTextOnPage);
+					return element;
+				}else{
+					System.out.println("FluentWait Failed");
+					return null;
+				}
 			}
 		});
-
 	}
 
 }
