@@ -1,4 +1,4 @@
-package exceptions;
+package JavaConcepts;
 
 //class represents user-defined exception  
 class UserDefinedException extends Exception  

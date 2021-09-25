@@ -1,4 +1,4 @@
-package important_concepts;
+package _important_concepts;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -42,7 +42,7 @@ public class Waits {
 				.pollingEvery(Duration.ofSeconds(5))	//.pollingEvery(5, TimeUnit.SECONDS)  Before Selenium 3.11
 				.ignoring(NoSuchElementException.class);
 
-		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+		WebElement element = wait2.until(new Function<WebDriver, WebElement>() {
 			public WebElement apply(WebDriver driver) {
 				WebElement element = driver.findElement(By.xpath("//*[@id='softwareTestingMaterial']"));
 				String getTextOnPage = element.getText();

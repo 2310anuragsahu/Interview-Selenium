@@ -8,7 +8,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="groups.GroupTagTesting">
+			<class name="_important_concepts.GroupTagTesting">
 				<methods>
  					<!--<include name="TC_001" /> -->
 					<exclude name="TC_004" />

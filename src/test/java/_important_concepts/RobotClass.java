@@ -1,4 +1,4 @@
-package important_concepts;
+package _important_concepts;
 
 import java.awt.Robot;
 import java.awt.event.InputEvent;

@@ -1,4 +1,4 @@
-package important_concepts;
+package _important_concepts;
 
 import java.util.Iterator;
 import java.util.Set;

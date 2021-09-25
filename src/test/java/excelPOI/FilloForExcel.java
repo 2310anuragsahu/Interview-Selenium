@@ -38,7 +38,7 @@ public class FilloForExcel {
 
 		String excelPath = ".\\src\\test\\resources\\documents\\Data.xlsx";
 		String strQuery = "Select * from Sheet2";
-		
+
 		System.out.println("Select Query Result:");
 		filloQuery.selectQuery(excelPath, strQuery);
 
@@ -48,13 +48,20 @@ public class FilloForExcel {
 		String strQuery2 = "Update Sheet2 Set Country='America' where ID='100'";
 		filloQuery.updateQuery(excelPath, strQuery2);
 		filloQuery.selectQuery(excelPath, strQuery);
-		
+
 		//Insert Query
 		System.out.println();
 		System.out.println("Inserting in Excel Sheet");
 		String strQuery3 = "Insert into sheet2 (ID,Name,Country) Values(300,'Peter','UK')";
 		filloQuery.updateQuery(excelPath, strQuery3);
 		filloQuery.selectQuery(excelPath, strQuery);
-		
+
+		//Delete Query
+		System.out.println();
+		System.out.println("Deleting in Excel Sheet");
+		String strQuery4 = "Delete from sheet2 where ID='300'";
+		filloQuery.updateQuery(excelPath, strQuery4);
+		filloQuery.selectQuery(excelPath, strQuery);
+
 	}
 }

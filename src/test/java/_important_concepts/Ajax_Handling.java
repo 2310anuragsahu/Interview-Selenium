@@ -1,4 +1,4 @@
-package important_concepts;
+package _important_concepts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
